@@ -3,15 +3,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
+$lightGrey: #9DA4B2;
+
+
 // The page component
 .page-menu {
     display: flex;
     gap: 10px;
     padding: 20px;
     justify-content: center;
+    position: relative;
 }
 
 .page {
+    position: relative;
     font-family: 'Inter';
     font-size: 14px;
     color: #697287;
@@ -21,8 +26,10 @@
     cursor: move;
     user-select: none;
     text-align: center;
-    background-color: rgba(157, 164, 178, 0.15);
-    z-index: 2;
+    background-color: #fff;
+    z-index: 1;
+    display: flex;
+    overflow: hidden;
 
     &.active {
         background-color: #fff;
@@ -35,21 +42,29 @@
         z-index: 2;
     }
 }
+.page::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: $lightGrey;
+    opacity: 0.15;
+    z-index: 0;
+}
+.page.active::before {
+    background-color: #fff;
+}
+.page span {
+  position: relative;
+  z-index: 1;
+  font-weight: bold;
+}
 
 
 // Dashed line
-.page-track {
-    position: relative;
-    display: flex;
-    gap: 20px;
-}
-
-.page-track::after {
-    content: "";
+.dashed-line {
+    border-top: 1px dashed #000;
+    width: 285px;
     position: absolute;
-    top: 50%;
-    left: 0;
     z-index: 0;
-    width: 100%;
-    border-top: 2px dashed #999;
+    top: 50%;
 }
