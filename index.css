@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+.page-menu {
+  display: flex;
+  gap: 10px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.page {
+  font-family: "Inter";
+  font-size: 14px;
+  color: #1A1A1A;
+  padding: 5px 10px;
+  border: 1px solid #e1e1e1;
+  border-radius: 8px;
+  cursor: move;
+  user-select: none;
+  text-align: center;
+}
+
+/*# sourceMappingURL=index.css.map */
