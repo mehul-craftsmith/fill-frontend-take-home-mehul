@@ -21,4 +21,15 @@
     cursor: move;
     user-select: none;
     text-align: center;
+    background-color: #9DA4B2;
+    opacity: 0.15;
+
+    &.active {
+        background-color: #fff;
+        opacity: 1;
+    }
+    &:hover {
+        background-color: #9DA4B2;
+        opacity: 0.35;
+    }
 }
