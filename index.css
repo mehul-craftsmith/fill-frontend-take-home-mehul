@@ -9,23 +9,41 @@
 .page {
   font-family: "Inter";
   font-size: 14px;
-  color: #1A1A1A;
+  color: #697287;
   padding: 5px 10px;
-  border: 1px solid #e1e1e1;
+  border: none;
   border-radius: 8px;
   cursor: move;
   user-select: none;
   text-align: center;
-  background-color: #9DA4B2;
-  opacity: 0.15;
+  background-color: rgba(157, 164, 178, 0.15);
+  z-index: 2;
 }
 .page.active {
   background-color: #fff;
+  border: 1px solid #e1e1e1;
+  color: #1a1a1a;
   opacity: 1;
 }
 .page:hover {
   background-color: #9DA4B2;
-  opacity: 0.35;
+  z-index: 2;
+}
+
+.page-track {
+  position: relative;
+  display: flex;
+  gap: 20px;
+}
+
+.page-track::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 0;
+  width: 100%;
+  border-top: 2px dashed #999;
 }
 
 /*# sourceMappingURL=index.css.map */
