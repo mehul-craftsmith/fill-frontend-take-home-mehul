@@ -44,12 +44,18 @@
             </ul>
             <h5>Delete</h5>
         </div>
-        <div class="modal" id="modal" >
-            <img src="images/close.png" onclick="closeModal()" />
-            <h5>Enter new page's name</h5>
-            <input type="text" placeholder="Eg. Thank you page" />
-            <button>Add</button>
+
+        <div id="modal-backdrop" class="" >
+            <div id="modal" class="modal" >
+                <img src="images/close.png" onclick="closeModal()" />
+                <h5>Enter new page's name</h5>
+                <input type="text" placeholder="Eg. Thank you page" />
+                <div class="ta-center" >
+                    <button onclick="closeModal()" >Add</button>
+                </div>
+            </div>
         </div>
+        
 
         <script type="text/javascript" src="index.js" ></script>
         <script type="text/javascript" src="add-menu.js" ></script>
