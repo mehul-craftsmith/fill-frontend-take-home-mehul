@@ -1,6 +1,28 @@
 let draggedPage = null;
 const menu = document.getElementById("page-menu");
 
+/* 
+TODO: 
+Refactor to ES6
+Refactor to query once and store in a variable
+*/
+function normalizePageGaps(container) {
+  // Remove all existing gaps
+  document.querySelectorAll('.gap-between-pages').forEach(gap => gap.remove());
+
+  // Get updated list of pages
+  const pages = [...document.querySelectorAll('.page')];
+
+  pages.forEach((page, index) => {
+    if (index < pages.length - 1) {
+      // Insert gap after every page except the last
+      const gap = document.createElement('div');
+      gap.className = 'gap-between-pages';
+      container.insertBefore(gap, pages[index + 1]);
+    }
+  });
+}
+
 menu.querySelectorAll(".page").forEach(page => {
   page.addEventListener("dragstart", () => {
     draggedPage = page;
@@ -24,6 +46,8 @@ menu.querySelectorAll(".page").forEach(page => {
       // Drop after
       menu.insertBefore(draggedPage, page.nextSibling);
     }
+
+    normalizePageGaps(menu);
   });
 });
 

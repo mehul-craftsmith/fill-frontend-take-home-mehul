@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 .page-menu {
   display: flex;
-  gap: 10px;
+  align-items: center;
   padding: 20px;
   justify-content: center;
   position: relative;
@@ -55,10 +55,38 @@
 
 .dashed-line {
   border-top: 1px dashed #000;
-  width: 285px;
+  width: 325px;
   position: absolute;
   z-index: 0;
   top: 50%;
+}
+
+.gap-between-pages {
+  height: 25px;
+  width: 20px;
+  pointer-events: none;
+}
+.gap-between-pages button {
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid #e1e1e1;
+  opacity: 1;
+  position: relative;
+  z-index: 4;
+  cursor: pointer;
+}
+.gap-between-pages.expand {
+  width: 50px;
+  text-align: center;
+  align-content: center;
+}
+
+.context-menu {
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+}
+.context-menu h4 {
+  background-color: #FAFBFC;
 }
 
 /*# sourceMappingURL=index.css.map */

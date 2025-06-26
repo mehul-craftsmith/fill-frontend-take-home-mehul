@@ -16,3 +16,16 @@ Edge cases handled in the behavior of Drag and drop:
 
 # SASS
 sass sass/index.scss:index.css --watch
+
+
+
+
+
+# TODO:
+
+> "Expanded" state should only show on hover
+> Drag and drop should not consider gaps
+> Write test cases
+
+> Adding pages should add them in the current sequence
+> Deleting the page should delete it from the current sequence

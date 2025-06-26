@@ -9,7 +9,8 @@ $lightGrey: #9DA4B2;
 // The page component
 .page-menu {
     display: flex;
-    gap: 10px;
+    align-items: center;
+    // gap: 10px;
     padding: 20px;
     justify-content: center;
     position: relative;
@@ -63,8 +64,40 @@ $lightGrey: #9DA4B2;
 // Dashed line
 .dashed-line {
     border-top: 1px dashed #000;
-    width: 285px;
+    width: 325px;
     position: absolute;
     z-index: 0;
     top: 50%;
+}
+
+
+// Add menu
+.gap-between-pages {
+    height: 25px;
+    width: 20px;
+    pointer-events: none;
+
+    button {
+        background-color: #fff;
+        border-radius: 50%;
+        border: 1px solid #e1e1e1;
+        opacity: 1;
+        position: relative;
+        z-index: 4;
+        cursor: pointer;
+    }
+    &.expand {
+        width: 50px;
+        text-align: center;
+        align-content: center;
+    }
+}
+
+.context-menu {
+    border: 1px solid #e1e1e1;
+    border-radius: 10px;
+
+    h4 {
+        background-color: #FAFBFC;
+    }
 }
