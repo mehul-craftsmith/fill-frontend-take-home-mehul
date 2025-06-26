@@ -27,7 +27,7 @@ $borderColor: #e1e1e1;
 .page {
     position: relative;
     font-family: 'Inter';
-    font-size: 14px;
+    font-size: 13px;
     color: #697287;
     padding: 5px 10px;
     border: none;
@@ -39,7 +39,11 @@ $borderColor: #e1e1e1;
     z-index: 1;
     display: flex;
     overflow: hidden;
+    align-items: center;
 
+    svg {
+        margin-right: 0.25em;
+    }
     &.active {
         background-color: #fff;
         border: 1px solid $borderColor;
@@ -62,17 +66,12 @@ $borderColor: #e1e1e1;
 .page.active::before {
     background-color: #fff;
 }
-.page span {
-  position: relative;
-  z-index: 1;
-  font-weight: bold;
-}
 
 
 // Dashed line
 .dashed-line {
     border-top: 1px dashed #000;
-    width: 325px;
+    width: 24%;
     position: absolute;
     z-index: 0;
     top: 50%;
