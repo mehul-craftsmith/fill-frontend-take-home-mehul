@@ -12,37 +12,28 @@
                 Info
             </div>
             <div class="gap-between-pages" >
-                <button>+</button>
+                <button onclick="openModal()" >+</button>
             </div>
 
             <div id="page2" class="page" draggable="true" >Details</div>
             <div class="gap-between-pages" >
-                <button>+</button>
+                <button onclick="openModal()" >+</button>
             </div>
 
             <div id="page3" class="page" draggable="true" >
                 <span>Other</span>
             </div>
             <div class="gap-between-pages" >
-                <button>+</button>
+                <button onclick="openModal()" >+</button>
             </div>
             
             <div id="page4" class="page" draggable="true" >Ending</div>
             <div class="gap-between-pages" >
-                <button>+</button>
+                <button onclick="openModal()" >+</button>
             </div>
             
             <div id="page5" class="page active" draggable="true" >+ Add page</div>
         </div>
-
-        <!-- Expanded state -->
-        <!--
-        <div class="gap-between-pages expand" >
-            <button>+</button>
-        </div>
-        -->
-        <!-- end Expanded state -->
-
         <div class="context-menu" >
             <h4>Settings</h4>
             <ul>
@@ -53,8 +44,15 @@
             </ul>
             <h5>Delete</h5>
         </div>
+        <div class="modal" id="modal" >
+            <img src="images/close.png" onclick="closeModal()" />
+            <h5>Enter new page's name</h5>
+            <input type="text" placeholder="Eg. Thank you page" />
+            <button>Add</button>
+        </div>
 
         <script type="text/javascript" src="index.js" ></script>
         <script type="text/javascript" src="add-menu.js" ></script>
+        <script type="text/javascript" src="modal.js" ></script>
     </body>
 </html>

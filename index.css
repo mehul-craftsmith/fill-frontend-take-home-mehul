@@ -96,4 +96,33 @@
   background-color: #FAFBFC;
 }
 
+/* Modal */
+.modal {
+  width: fit-content;
+  border: 1px solid #e1e1e1;
+  border-radius: 10px;
+  padding: 2em;
+  padding-top: 1em;
+  margin-top: 1em;
+  display: none;
+}
+.modal h5 {
+  font-family: "Inter";
+  font-weight: 300;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+.modal img {
+  height: 15px;
+  width: 15px;
+  cursor: pointer;
+  float: right;
+}
+.modal.open {
+  display: block;
+}
+.modal.close {
+  display: none;
+}
+
 /*# sourceMappingURL=index.css.map */
