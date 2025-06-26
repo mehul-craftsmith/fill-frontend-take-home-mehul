@@ -97,12 +97,25 @@
   border-radius: 10px;
 }
 .context-menu h4 {
+  font-family: "Inter";
+  font-weight: 500;
   background-color: #FAFBFC;
   padding-top: 1em;
   padding-bottom: 1em;
   padding-left: 1em;
   margin-top: 0em;
   margin-bottom: 0em;
+}
+
+.settings-list {
+  font-family: "Inter";
+  font-size: 13px;
+  list-style-type: none;
+  padding-left: 1em;
+  margin-top: 0em;
+}
+.settings-list .delete-label {
+  color: #EF494F;
 }
 
 /* Modal */

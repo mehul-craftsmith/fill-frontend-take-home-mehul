@@ -5,6 +5,7 @@
 
 $lightGrey: #9DA4B2;
 $blue: #2F72E2;
+$dangerRed: #EF494F;
 $borderColor: #e1e1e1;
 
 
@@ -116,12 +117,25 @@ $borderColor: #e1e1e1;
     border-radius: 10px;
 
     h4 {
+        font-family: 'Inter';
+        font-weight: 500;
         background-color: #FAFBFC;
         padding-top: 1em;
         padding-bottom: 1em;
         padding-left: 1em;
         margin-top: 0em;
         margin-bottom: 0em;
+    }
+}
+.settings-list {
+    font-family: 'Inter';
+    font-size: 13px;
+    list-style-type: none;
+    padding-left: 1em;
+    margin-top: 0em;
+
+    .delete-label {
+        color: $dangerRed;
     }
 }
 

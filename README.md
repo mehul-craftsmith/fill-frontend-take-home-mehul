@@ -30,3 +30,9 @@ sass sass/index.scss:index.css --watch
 > Adding pages should add them in the current sequence
 > Deleting the page should delete it from the current sequence
 > When the hover is still inside the gap, the 1.5 second rule shouldn't apply
+
+
+
+
+Semantics
+Even the delete button is part of the list, and thus, part of the ul list, to be semantically accurate.
