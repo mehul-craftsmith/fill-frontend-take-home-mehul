@@ -56,7 +56,7 @@
 }
 
 .dashed-line {
-  border-top: 1px dashed #000;
+  border-top: 1.5px dashed #C0C0C0;
   width: 24%;
   position: absolute;
   z-index: 0;
@@ -90,12 +90,19 @@
   margin: 0px auto;
 }
 
+/* Context menu */
 .context-menu {
+  width: fit-content;
   border: 1px solid #e1e1e1;
   border-radius: 10px;
 }
 .context-menu h4 {
   background-color: #FAFBFC;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  margin-top: 0em;
+  margin-bottom: 0em;
 }
 
 /* Modal */
