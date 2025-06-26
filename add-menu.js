@@ -1,25 +1,29 @@
+
 document.addEventListener("DOMContentLoaded", () => {
-    const gaps = document.querySelectorAll('.gap-between-pages');
+    const container = document.querySelector('.page-menu'); // or whatever your static parent is
     const timeouts = new Map();
 
-    gaps.forEach(gap => {
-        gap.addEventListener('mouseenter', () => {
-            gaps.forEach(g => g.classList.remove('expand'));
+    container.addEventListener('mouseenter', event => {
+        const gap = event.target.closest('.gap-between-pages');
+        if (!gap) return;
 
-            // Clear any previous timeout for this gap
-            if (timeouts.has(gap)) {
-                clearTimeout(timeouts.get(gap));
-            }
+        // Remove from all
+        document.querySelectorAll('.gap-between-pages').forEach(g => g.classList.remove('expand'));
 
-            gap.classList.add('expand');
+        // Clear old timeout
+        if (timeouts.has(gap)) {
+            clearTimeout(timeouts.get(gap));
+        }
 
-            // Remove after 1.5 seconds
-            const timeoutId = setTimeout(() => {
-                gap.classList.remove('expand');
-            }, 1500);
+        // Add class
+        gap.classList.add('expand');
 
-            // Save timeout id
-            timeouts.set(gap, timeoutId);
-        });
-    });
+        // Set timeout to remove after 1.5s
+        const timeoutId = setTimeout(() => {
+            gap.classList.remove('expand');
+            timeouts.delete(gap);
+        }, 1500);
+
+        timeouts.set(gap, timeoutId);
+    }, true);
 });

@@ -18,6 +18,9 @@ function normalizePageGaps(container) {
       // Insert gap after every page except the last
       const gap = document.createElement('div');
       gap.className = 'gap-between-pages';
+      const addButton = document.createElement('button');
+      addButton.textContent = '+';
+      gap.appendChild(addButton);
       container.insertBefore(gap, pages[index + 1]);
     }
   });
