@@ -1,6 +1,6 @@
 
 document.addEventListener("DOMContentLoaded", () => {
-    const container = document.querySelector('.page-menu'); // or whatever your static parent is
+    const container = document.querySelector('.page-menu');
     const timeouts = new Map();
 
     container.addEventListener('mouseenter', event => {
