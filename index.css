@@ -65,6 +65,7 @@
   height: 25px;
   width: 20px;
   pointer-events: auto;
+  transition: width 0.3s ease;
 }
 .gap-between-pages button {
   background-color: #fff;
@@ -74,11 +75,17 @@
   position: relative;
   z-index: 4;
   cursor: pointer;
+  display: none;
 }
 .gap-between-pages.expand {
   width: 50px;
   text-align: center;
   align-content: center;
+  transition: width 0.3s ease;
+}
+.gap-between-pages.expand button {
+  display: block;
+  margin: 0px auto;
 }
 
 .context-menu {

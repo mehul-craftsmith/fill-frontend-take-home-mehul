@@ -76,6 +76,7 @@ $lightGrey: #9DA4B2;
     height: 25px;
     width: 20px;
     pointer-events: auto;
+    transition: width 0.3s ease;
 
     button {
         background-color: #fff;
@@ -85,11 +86,18 @@ $lightGrey: #9DA4B2;
         position: relative;
         z-index: 4;
         cursor: pointer;
+        display: none;
     }
     &.expand {
         width: 50px;
         text-align: center;
         align-content: center;
+        transition: width 0.3s ease;
+
+        button {
+            display: block;
+            margin: 0px auto;
+        }
     }
 }
 
