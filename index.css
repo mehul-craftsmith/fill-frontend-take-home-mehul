@@ -64,7 +64,7 @@
 .gap-between-pages {
   height: 25px;
   width: 20px;
-  pointer-events: none;
+  pointer-events: auto;
 }
 .gap-between-pages button {
   background-color: #fff;

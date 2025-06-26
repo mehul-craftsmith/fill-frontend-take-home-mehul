@@ -75,7 +75,7 @@ $lightGrey: #9DA4B2;
 .gap-between-pages {
     height: 25px;
     width: 20px;
-    pointer-events: none;
+    pointer-events: auto;
 
     button {
         background-color: #fff;
