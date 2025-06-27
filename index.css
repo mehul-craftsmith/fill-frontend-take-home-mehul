@@ -38,7 +38,7 @@
   margin-right: 0.25em;
 }
 .page svg.ellipses-svg {
-  margin-left: 1em;
+  padding-left: 0.5em;
 }
 .page.active {
   background-color: #fff;
@@ -49,6 +49,9 @@
 .page:hover {
   background-color: #d6d6d6;
   z-index: 2;
+}
+.page:not(.active) button {
+  display: none;
 }
 
 .page::before {

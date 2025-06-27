@@ -52,7 +52,7 @@ $borderColor: #e1e1e1;
         margin-right: 0.25em;
     }
     svg.ellipses-svg {
-        margin-left: 1em;
+        padding-left: 0.5em;
     }
     &.active {
         background-color: #fff;
@@ -63,6 +63,11 @@ $borderColor: #e1e1e1;
     &:hover {
         background-color: #d6d6d6;
         z-index: 2;
+    }
+    &:not(.active) {
+        button {
+            display: none;
+        }
     }
 }
 .page::before {
