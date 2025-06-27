@@ -108,10 +108,10 @@
 }
 .context-menu h4 {
   font-family: "Inter";
+  font-size: 14px;
   font-weight: 500;
-  background-color: #FAFBFC;
-  padding-top: 1em;
-  padding-bottom: 1em;
+  padding-top: 0.75em;
+  padding-bottom: 0.55em;
   padding-left: 1em;
   margin-top: 0em;
   margin-bottom: 0em;
@@ -120,12 +120,43 @@
   display: block;
 }
 
+.context-header {
+  background-color: #FAFBFC;
+  border-radius: 10px;
+  padding-right: 7em;
+  margin-bottom: 0.3em;
+}
+
 .settings-list {
   font-family: "Inter";
   font-size: 13px;
   list-style-type: none;
-  padding-left: 1em;
+  padding-top: 0.25em;
+  padding-left: 0em;
   margin-top: 0em;
+  margin-bottom: 0em;
+}
+.settings-list li {
+  cursor: pointer;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.37em;
+  padding-bottom: 0.37em;
+  padding-left: 1em;
+}
+.settings-list li svg {
+  padding-right: 0.5em;
+}
+.settings-list li:hover {
+  background-color: #FAFBFC;
+}
+.settings-list li:last-child {
+  border-top: 1px solid #e1e1e1;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1em;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .settings-list .delete-label {
   color: #EF494F;

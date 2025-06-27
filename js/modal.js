@@ -31,13 +31,26 @@ document.addEventListener('click', function (event) {
     }
 });
 
+
+let currentButton = null;
+
 buttons.forEach(button => {
     button.addEventListener('click', (e) => {
+
+        const isSameButton = currentButton === button;
+        const isMenuOpen = contextMenu.classList.contains('open');
+        if (isSameButton && isMenuOpen) {
+            closeContext(); // Close if clicking same button again
+            currentButton = null;
+            return;
+        }
+        currentButton = button;
+
         const rect = button.getBoundingClientRect();
 
         // Position menu just below the clicked button
         contextMenu.style.position = 'absolute';
-        contextMenu.style.top = `${rect.bottom + window.scrollY}px`;
+        contextMenu.style.top = `${rect.bottom + window.scrollY + 12}px`;
         contextMenu.style.left = `${rect.left + window.scrollX}px`;
         openContext();
     });
