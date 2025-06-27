@@ -251,3 +251,30 @@ $contextHighlight: #FAFBFC;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1050;
 }
+
+
+// For smaller screens
+@media (max-width: 1400px) {
+    .dashed-line {
+        width: 36%;
+    }
+}
+@media (min-width: 700px) and (max-width: 850px) {
+    .dashed-line {
+        width: 60%;
+    }
+}
+
+// For mobile range devices
+@media (min-width: 200px) and (max-width: 700px) {
+    .dashed-line {
+        width: 75%;
+    }
+}
+
+// For larger screen
+@media (min-width: 2100px) {
+    .dashed-line {
+        width: 20%;
+    }
+}

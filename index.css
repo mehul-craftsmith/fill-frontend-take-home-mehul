@@ -220,4 +220,25 @@
   z-index: 1050;
 }
 
+@media (max-width: 1400px) {
+  .dashed-line {
+    width: 36%;
+  }
+}
+@media (min-width: 700px) and (max-width: 850px) {
+  .dashed-line {
+    width: 60%;
+  }
+}
+@media (min-width: 200px) and (max-width: 700px) {
+  .dashed-line {
+    width: 75%;
+  }
+}
+@media (min-width: 2100px) {
+  .dashed-line {
+    width: 20%;
+  }
+}
+
 /*# sourceMappingURL=index.css.map */
