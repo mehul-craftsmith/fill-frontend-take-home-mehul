@@ -3,10 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
+// Colors
 $lightGrey: #9DA4B2;
 $blue: #2F72E2;
 $dangerRed: #EF494F;
 $borderColor: #e1e1e1;
+$contextHighlight: #FAFBFC;
 
 
 // Common
@@ -19,7 +21,6 @@ $borderColor: #e1e1e1;
 .page-menu {
     display: flex;
     align-items: center;
-    // gap: 10px;
     padding: 20px;
     justify-content: center;
     position: relative;
@@ -50,9 +51,10 @@ $borderColor: #e1e1e1;
     }
     svg {
         margin-right: 0.25em;
-    }
-    svg.ellipses-svg {
-        padding-left: 0.5em;
+
+        &.ellipses-svg {
+            padding-left: 0.5em;
+        }
     }
     &.active {
         background-color: #fff;
@@ -69,17 +71,17 @@ $borderColor: #e1e1e1;
             display: none;
         }
     }
-}
-.page::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background-color: $lightGrey;
-    opacity: 0.15;
-    z-index: 0;
-}
-.page.active::before {
-    background-color: #fff;
+    &::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-color: $lightGrey;
+        opacity: 0.15;
+        z-index: 0;
+    }
+    &.active::before {
+        background-color: #fff;
+    }
 }
 
 
@@ -93,7 +95,7 @@ $borderColor: #e1e1e1;
 }
 
 
-// Add menu
+// Add page option
 .gap-between-pages {
     height: 25px;
     width: 20px;
@@ -124,7 +126,7 @@ $borderColor: #e1e1e1;
 }
 
 
-/* Context menu */
+// Context menu
 .context-menu {
     width: fit-content;
     border: 1px solid #e1e1e1;
@@ -145,10 +147,6 @@ $borderColor: #e1e1e1;
         display: block;
     }
 }
-
-
-$contextHighlight: #FAFBFC;
-
 .context-header {
     background-color: $contextHighlight;
     border-radius: 10px;
@@ -193,7 +191,7 @@ $contextHighlight: #FAFBFC;
 }
 
 
-/* Modal */
+// Modal
 .modal {
     width: fit-content;
     border: 1px solid $borderColor;

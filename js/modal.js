@@ -1,3 +1,10 @@
+
+/*
+    This module handles the 'add new page'
+    modal and it's backdrop
+*/
+
+
 const modal = document.getElementById("modal");
 const modalBackdrop = document.getElementById("modal-backdrop");
 const contextMenu = document.getElementById("context-menu");

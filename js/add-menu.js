@@ -1,4 +1,10 @@
 
+/* 
+    This module inculcates the page buttons expanding functionality
+    (Exposing the dashed line behind)
+*/
+
+
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.querySelector('.page-menu');
     const timeouts = new Map();

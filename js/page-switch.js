@@ -1,3 +1,10 @@
+
+/*
+    This module handles page's 
+    state toggle
+*/
+
+
 document.querySelectorAll('.page').forEach(box => {
     box.addEventListener('click', () => {
         // Remove 'active' from all boxes

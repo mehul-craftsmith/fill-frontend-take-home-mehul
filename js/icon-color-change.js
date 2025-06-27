@@ -1,4 +1,10 @@
 
+/*
+	This module handles changing icon colors
+    when pages are switched
+*/
+
+
 document.querySelectorAll('.page').forEach(page => {
     page.addEventListener('click', () => {
         // Remove active class and reset stroke for all pages
@@ -9,7 +15,7 @@ document.querySelectorAll('.page').forEach(page => {
             paths.forEach((path) => {
                 if (path) {
                     path.setAttribute('stroke', '#9DA4B2'); // grey
-                    path.setAttribute('fill', 'transparent'); // optional
+                    path.setAttribute('fill', 'transparent');
                 }
             });
         });
@@ -21,7 +27,7 @@ document.querySelectorAll('.page').forEach(page => {
         paths.forEach((path) => {
             if (path) {
                 path.setAttribute('stroke', '#F59D0E'); // orange
-                path.setAttribute('fill', 'transparent'); // optional
+                path.setAttribute('fill', 'transparent');
             }
         });
     });
