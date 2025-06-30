@@ -2,7 +2,7 @@
 A take home frontend assessment
 
 
-# <small>TODO</small>
+<small>TODO</small>
 - Refactor to ES6, Typescript
 - Refactor to query once and store in a variable, for use accross modules
 - Write test cases
@@ -10,7 +10,7 @@ A take home frontend assessment
 If I had a bit more time, I would do the above. In a office setup, I would submit this ticket to PR and come back to these TODOs on a Friday evening.
 
 
-# <small>Some noteworthy points</small>
+<small>Some noteworthy points</small>
 
 - Avoided using React or any framework because I wanted to keep the functionality lite
 - I always strive to not use too many libraries, so that the application does not get bloated
@@ -21,7 +21,7 @@ If I had a bit more time, I would do the above. In a office setup, I would submi
 
 
 
-# <small>Documentation</small>
+<small>Documentation</small>
 
-# <small>SASS</small>
+<small>SASS</small>
 sass sass/index.scss:index.css --watch
