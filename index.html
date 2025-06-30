@@ -1,7 +1,8 @@
-<html>
+<!DOCTYPE html>
     <head>
         <title>Take-home frontend assessment</title>
-        <link rel="stylesheet" href="index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" onload="this.media='all'" />
     </head>
     <body>
         <div class="page-menu" id="page-menu" >
@@ -14,7 +15,7 @@
                     <path d="M10.0003 6.125C10.2993 6.12518 10.5413 6.36795 10.5413 6.66699C10.5411 6.96589 10.2992 7.20783 10.0003 7.20801C9.70126 7.20801 9.45849 6.966 9.45831 6.66699C9.45831 6.36784 9.70115 6.125 10.0003 6.125Z" fill="#F59D0E" stroke="#F59D0E" stroke-width="0.25"/>
                 </svg>
                 Info
-                <button id="open-context-btn" onclick="openContext()" >
+                <button id="open-context-btn" onclick="openContext()" aria-label="Info" >
                     <svg class="ellipses-svg" width="4" height="14" viewBox="0 0 4 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.00001 2.16667C2.3682 2.16667 2.66668 1.86819 2.66668 1.5C2.66668 1.13181 2.3682 0.833336 2.00001 0.833336C1.63182 0.833336 1.33334 1.13181 1.33334 1.5C1.33334 1.86819 1.63182 2.16667 2.00001 2.16667Z" fill="#9DA4B2"/>
                         <path d="M2.00001 7.66667C2.3682 7.66667 2.66668 7.36819 2.66668 7C2.66668 6.63181 2.3682 6.33334 2.00001 6.33334C1.63182 6.33334 1.33334 6.63181 1.33334 7C1.33334 7.36819 1.63182 7.66667 2.00001 7.66667Z" fill="#9DA4B2"/>
@@ -37,7 +38,7 @@
                     <path d="M10.625 2.70833V6.87499C10.625 7.33523 10.9981 7.70833 11.4583 7.70833H15.625" stroke="#8C93A1" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
                 Details
-                <button id="open-context-btn" onclick="openContext()" >
+                <button id="open-context-btn" onclick="openContext()" aria-label="Details" >
                     <svg class="ellipses-svg" width="4" height="14" viewBox="0 0 4 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.00001 2.16667C2.3682 2.16667 2.66668 1.86819 2.66668 1.5C2.66668 1.13181 2.3682 0.833336 2.00001 0.833336C1.63182 0.833336 1.33334 1.13181 1.33334 1.5C1.33334 1.86819 1.63182 2.16667 2.00001 2.16667Z" fill="#9DA4B2"/>
                         <path d="M2.00001 7.66667C2.3682 7.66667 2.66668 7.36819 2.66668 7C2.66668 6.63181 2.3682 6.33334 2.00001 6.33334C1.63182 6.33334 1.33334 6.63181 1.33334 7C1.33334 7.36819 1.63182 7.66667 2.00001 7.66667Z" fill="#9DA4B2"/>
@@ -60,7 +61,7 @@
                     <path d="M10.625 2.70833V6.87499C10.625 7.33523 10.9981 7.70833 11.4583 7.70833H15.625" stroke="#8C93A1" stroke-width="1.5" stroke-linecap="round"/>
                 </svg>
                 Other
-                <button id="open-context-btn" onclick="openContext()" >
+                <button id="open-context-btn" onclick="openContext()" aria-label="Other" >
                     <svg class="ellipses-svg" width="4" height="14" viewBox="0 0 4 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.00001 2.16667C2.3682 2.16667 2.66668 1.86819 2.66668 1.5C2.66668 1.13181 2.3682 0.833336 2.00001 0.833336C1.63182 0.833336 1.33334 1.13181 1.33334 1.5C1.33334 1.86819 1.63182 2.16667 2.00001 2.16667Z" fill="#9DA4B2"/>
                         <path d="M2.00001 7.66667C2.3682 7.66667 2.66668 7.36819 2.66668 7C2.66668 6.63181 2.3682 6.33334 2.00001 6.33334C1.63182 6.33334 1.33334 6.63181 1.33334 7C1.33334 7.36819 1.63182 7.66667 2.00001 7.66667Z" fill="#9DA4B2"/>
@@ -81,7 +82,7 @@
                     <path d="M11.5 6.91667L7.75001 11.5L6.08334 9.83334M16.7083 9.00001C16.7083 13.2572 13.2572 16.7083 9.00001 16.7083C4.74281 16.7083 1.29167 13.2572 1.29167 9.00001C1.29167 4.74281 4.74281 1.29167 9.00001 1.29167C13.2572 1.29167 16.7083 4.74281 16.7083 9.00001Z" stroke="#8C93A1" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
                 Ending
-                <button id="open-context-btn" onclick="openContext()" >
+                <button id="open-context-btn" onclick="openContext()" aria-label="Ending" >
                     <svg class="ellipses-svg" width="4" height="14" viewBox="0 0 4 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2.00001 2.16667C2.3682 2.16667 2.66668 1.86819 2.66668 1.5C2.66668 1.13181 2.3682 0.833336 2.00001 0.833336C1.63182 0.833336 1.33334 1.13181 1.33334 1.5C1.33334 1.86819 1.63182 2.16667 2.00001 2.16667Z" fill="#9DA4B2"/>
                         <path d="M2.00001 7.66667C2.3682 7.66667 2.66668 7.36819 2.66668 7C2.66668 6.63181 2.3682 6.33334 2.00001 6.33334C1.63182 6.33334 1.33334 6.63181 1.33334 7C1.33334 7.36819 1.63182 7.66667 2.00001 7.66667Z" fill="#9DA4B2"/>
