@@ -4,9 +4,9 @@ A take home frontend assessment
 
 ##### If I had a bit more time, I would do these items
 - Refactor to ES6, Typescript
-- Refactor to query once and store in a variable, for use accross modules
+- Refactor JS, to query once and store in a variable, for use accross modules
 - Write test cases
-In a office setup, I would submit this ticket to PR and come back to these TODOs on a Friday evening.
+###### In a office setup, I would submit this ticket to PR and come back to these TODOs on a Friday evening.
 
 
 ##### Some noteworthy points
