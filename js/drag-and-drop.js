@@ -76,4 +76,6 @@ menu.addEventListener("drop", e => {
 	} else if (dropX > lastRect.right) {
 		menu.appendChild(draggedPage);
 	}
+
+	normalizePageGaps(menu);
 });
